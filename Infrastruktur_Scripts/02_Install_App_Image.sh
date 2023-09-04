@@ -13,6 +13,6 @@ sudo apt install unzip
 sudo unzip microblog-13-lb-mariadb-V2.zip
 
 # Use Docker Compose to start the app
-docker-compose up -d
+docker compose up -d
 
 
