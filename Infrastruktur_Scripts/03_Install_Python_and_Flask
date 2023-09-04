@@ -3,8 +3,7 @@
 # Install Python and Flask
 sudo apt-get -y install python3-pip
 sudo apt install python3.10-venv
-sudo pip install flask
-pip install python-dotenv
+sudo pip3 install -r requirements.txt
 
 # Activate the enviroment  
 sudo python3 -m venv myenv
