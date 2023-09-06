@@ -10,4 +10,4 @@ sudo python3 -m venv myenv
 source myenv/bin/activate
 
 # Start the App
-flask run
+sudo flask run
