@@ -16,9 +16,9 @@ app.secret_key = "your_secret_key"  # Change this to a random secret key.
 # Connect to the MySQL database
 conn = mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="Azizullah@!321",
-    database="todos"  # Replace with your database name
+    user="praxisarbeit",
+    password="1234",
+    database="todo"  # Replace with your database name
 )
 
 # # Create a cursor object to interact with the database
