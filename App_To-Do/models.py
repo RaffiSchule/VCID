@@ -3,14 +3,14 @@ from config import conn
 
 def create_tables():
     cursor = mysql.connection.cursor()
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
+    cursor.execute(
+         IF NOT EXISTS CREATE TABLE users (
             id INT AUTO_INCREMENT PRIMARY KEY,
             username VARCHAR(255) NOT NULL,
             password VARCHAR(255) NOT NULL
         )
-    ''')
-    cursor.execute('''
+    )
+    cursor.execute(
         CREATE TABLE IF NOT EXISTS todos (
             id INT AUTO_INCREMENT PRIMARY KEY,
             user_id INT,
@@ -18,7 +18,7 @@ def create_tables():
             completed BOOLEAN DEFAULT 0,
             FOREIGN KEY (user_id) REFERENCES users(id)
         )
-    ''')
+    )
     # cursor.commit()
     conn.commit()
     cursor.close()
