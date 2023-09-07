@@ -2,14 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 import mysql.connector
 from models import create_tables
 from config import app, conn
+
 # Initialize the database tables
-# create_tables()
+create_tables()
 
 
 # Create a cursor object to interact with the database
 cursor = conn.cursor()
 
-app.secret_key = "your_secret_key"  # Change this to a random secret key.
+app.secret_key = "raffi_secret_key"  # Change this to a random secret key.
 
 # Import necessary modules
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -43,7 +44,6 @@ def profile():
 
         cursor.execute("SELECT username FROM users WHERE id = %s", (session['user_id'],))
         user = cursor.fetchone()
-        # cursor.close()
 
         return render_template('profile.html', username=user['username'])
     else:
