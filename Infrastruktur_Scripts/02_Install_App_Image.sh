@@ -11,8 +11,8 @@ sudo wget https://os.s1.scloud.switch.ch/swift/v1/ifa-demo/microblog-13-lb-maria
 # Unzip image
 sudo apt install unzip
 sudo unzip microblog-13-lb-mariadb-V2.zip
+cd microblog-13-lb-mariadb
 
-# Use Docker Compose to start the app
-docker compose up -d
+
 
 

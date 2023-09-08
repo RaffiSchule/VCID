@@ -6,7 +6,7 @@ sudo apt-get update
 
 # Install Docker
 sudo curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sudo sh get-docker.sh
+sudo sh get-docker.sh
 
 # Start and enable Docker
 sudo systemctl start docker
