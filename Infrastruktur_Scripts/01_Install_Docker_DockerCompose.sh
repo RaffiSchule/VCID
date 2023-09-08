@@ -17,7 +17,7 @@ sudo apt install docker-compose-plugin
 sudo apt-get install docker-compose-plugin
 
 # Add your user to the docker group (optional, allows running Docker without sudo)
-sudo usermod -aG docker $ubuntu
+sudo usermod -aG docker ubuntu
 # Maybe restart the system (sudo shutdown -r now) to get the updated rights
 
 # Verify Docker and Docker Compose installation
